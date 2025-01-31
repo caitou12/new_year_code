@@ -163,16 +163,33 @@
     c2.height = c3.height = window.innerHeight;
     ctx1.fillStyle = '#000';
 
-    // 分段祝福语
     const textLines = [
-      "张艳玲,2025年蛇年快乐,",
-      "希望你每天都能被好运和惊喜包围。",
-      "新的一年，愿你笑得像春日暖阳，",
-      "温柔又灿烂，所有的梦想都能如愿以偿。",
-      "要是遇到什么烦心事，",
-      "别忘了我这个“树洞”随时等你倾诉哦。",
-      "蛇年快乐！"
+      "爸爸给儿子们拜年了!",
+      "祝你们蛇年快乐!",
+      "希望你们身体健康，万事如意!",
+      "爸爸永远爱你们!"
     ];
+
+    // 动态调整字体大小
+    function adjustFontSize() {
+      let maxLineWidth = 0;
+      ctx1.font = `900 ${fontSize}px Arial`;
+      textLines.forEach(line => {
+        const lineWidth = ctx1.measureText(line).width;
+    ];
+
+
+
+    // 分段祝福语
+    // const textLines = [
+    //   "张艳玲,2025年蛇年快乐,",
+    //   "希望你每天都能被好运和惊喜包围。",
+    //   "新的一年，愿你笑得像春日暖阳，",
+    //   "温柔又灿烂，所有的梦想都能如愿以偿。",
+    //   "要是遇到什么烦心事，",
+    //   "别忘了我这个“树洞”随时等你倾诉哦。",
+    //   "蛇年快乐！"
+    // ];
 
     // 动态调整字体大小
     function adjustFontSize() {
